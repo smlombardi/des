@@ -56,7 +56,7 @@ h1 { font-size: 54px; font-family: Tangerine, serif; line-height: 1; }
 
 #main-top { background: transparent; background-image: none !important; }
 
-#branding .header-text { color: #44ad92; text-align: right; text-shadow: none; line-height: 1.2; }
+#branding .header-text { color: #44ad92; text-align: right; text-shadow: none; line-height: 1.2; font-size: 12px; }
 #branding .header-addon-with-text { margin-top: -45px; }
 #branding #header_content .header_content-inner { padding: 10px 20px; }
 
