@@ -1,0 +1,102 @@
+
+.single-ring {
+  #main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
+
+  .ring-details {
+    h2 {
+      margin-bottom: 4px;
+      font-size: 48px;
+      font-family: Tangerine, serif;
+      line-height: 1;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 24px;
+      font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  .post-share-bar {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    clear: both;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.ring {
+  h1 {
+    font-size: 36px;
+  }
+  .ring-thumb {
+    min-height: 157px;
+  }
+}
+
+.ring-thumb img {
+  max-width: 135px;
+}
+
+.single-ring-left {
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 40px;
+  float:left;
+  width: 480px;
+  @include bp(mama-bear) {
+    margin-left: 0;
+    width:380px;
+  }
+  @include bp(baby-bear) {
+    width:360px;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  video {
+    width: 480px;
+    @include bp(mama-bear) {
+      width:378px;
+    }
+    @include bp(baby-bear) {
+      width:358px;
+    }
+  }
+}
+
+.single-ring-right {
+  float:left;
+  text-align: center;
+  width: 370px;
+  margin-left: 10px;
+  margin-top: 60px;
+  @include bp(mama-bear) {
+    width:340px;
+    margin: 50px 0 0 10px;
+  }
+  @include bp(baby-bear) {
+    width:360px;
+    margin:5px 0;
+  }
+}

@@ -36,7 +36,7 @@ get_header();
 					?>
 
 					<section class="entry-content cf">
-						<div class="ring-left column grid_8">
+						<div class="single-ring-left">
 							<?php
 								$ring_video_mp4 =  $ringpath . $ring .'.mp4';
 								$ring_video_webm =  $ringpath . $ring .'.webm';
@@ -50,7 +50,7 @@ get_header();
 								   <img src="<?= $ring_image; ?>" alt="<?= $ring ?>">
 								<?php }; ?>
 						</div>
-						<div class="ring-right column grid_4 last">
+						<div class="single-ring-right ">
 							<div class="ring-details">
 								<h2 class="exclusive">De’S Exclusive Collection</h2>
 								<h1>Style Number <?= $ring; ?></h1>
