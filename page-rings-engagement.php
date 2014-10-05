@@ -1,5 +1,5 @@
 <?php
-/* template name: Engagement Rings */
+/* template name: Diamond Engagement Rings */
 
 get_header();
 ?>
@@ -25,39 +25,37 @@ get_header();
 
 
 							<!-- now the loop for the items -->
-							<table id="rings">
-							<?php
-								$args = array( 'post_type' => 'ring', 'cat' => 17, 'posts_per_page' => -1, 'orderby' => 'title', 'order' => 'ASC' );
-								$loop = new WP_Query( $args );
-								$item = 1;
-								if ( have_posts() ) { $count = 0;
-									while ( $loop->have_posts() ) { $loop->the_post(); $count++;
-							?>
-							<? if ($item > 4) { $item = 1; } ?>
-							<? if ($item == 1) {
-								echo '<tr>';
-							} ?>
-								<td class="entry ring span3 text-center" >
-									<?php
-									$ring = get_the_title();
-									$ringpath = '/wp-content/uploads/diamond-rings/' ;
-									?>
-									<div class="ring-thumb">
-										<a href="<?php the_permalink();?>"><img src="<?= $ringpath . $ring;?>.jpg" alt=""></a>
-									</div>
-									<a href="<?php the_permalink();?>"><h1><?php the_title(); ?></h1></a>
-									<?php //the_content(); ?>
-								</td><!-- /.entry -->
-							<? if ($item == 4) {
-								echo '</tr>';
-							} ?>
+							<ul id="ring-grid" class="block-grid-4">
 
+								<?php
+									$count = 1;
+									$args = array( 'post_type' => 'ring', 'cat' => 17, 'posts_per_page' => -1,'orderby' => 'title', 'order' => 'ASC' );
+									$loop = new WP_Query( $args );
+									if ( have_posts() ) { $count = 0;
+										while ( $loop->have_posts() ) { $loop->the_post(); $count++;
+								?>
 
-								<?php $item++; ?>
+									<li class="ring-block">
+										<?php
+										$ring = get_the_title();
+										$ringpath = '/wp-content/uploads/diamond-rings/' ;
+										?>
+
+										<div class="ring-thumb">
+											<a href="<?php the_permalink();?>"><img src="<?= $ringpath . $ring;?>.jpg" alt=""></a>
+										</div>
+										<div class="ring-title">
+											<a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+										</div>
+										<?php //the_content(); ?>
+									</li><!-- /.entry -->
+
 
 
 							<?php } // End WHILE Loop ?>
-							</table>
+
+							</ul>
+
 							<?php } else {
 							?>
 							<article <?php post_class(); ?>>

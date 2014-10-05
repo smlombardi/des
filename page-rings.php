@@ -1,5 +1,5 @@
 <?php
-/* template name: Rings */
+/* template name: All Rings */
 
 get_header();
 ?>
@@ -28,6 +28,7 @@ get_header();
 							<ul id="ring-grid" class="block-grid-4">
 
 								<?php
+									$count = 1;
 									$args = array( 'post_type' => 'ring', 'posts_per_page' => -1 );
 									$loop = new WP_Query( $args );
 									if ( have_posts() ) { $count = 0;
@@ -52,7 +53,9 @@ get_header();
 
 
 							<?php } // End WHILE Loop ?>
+
 							</ul>
+
 							<?php } else {
 							?>
 							<article <?php post_class(); ?>>

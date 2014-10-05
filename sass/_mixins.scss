@@ -67,6 +67,10 @@
 .block-grid-4  li {
     width: 25%;
     list-style: none;
+
+    @include bp(baby-bear) {
+      width:100%;
+    }
 }
 
 .block-grid-4  li:nth-of-type(1n) {
