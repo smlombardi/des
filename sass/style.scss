@@ -12,6 +12,9 @@ style.css, and so you don't need to @import it here.
 /* theme resets, remove some theme defaults */
 
 
+$font-serif: 'Baskerville', Times, serif;
+$font-cursive: 'Tangerine', Times, serif; ;
+
 @import "_mixins";
 @import "_ring";
 
@@ -88,12 +91,12 @@ table#rings tr {
 
 h1 {
   font-size: 54px;
-  font-family: Tangerine, serif;
+  font-family: $font-cursive;
   line-height: 1;
 }
 
 .home .element-columns h3 {
-  font-family: Tangerine, Baskerville, Times, serif;
+  font-family: $font-serif;
   color: #44ad92;
   font-size: 35px;
   -webkit-font-smoothing: subpixel-antialiased;
