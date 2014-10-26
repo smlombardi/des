@@ -4,12 +4,6 @@ Description: Child theme for the Theme Blvd framework
 Author: Design by MGC
 Template: alyeska
 */
-/*
-Note: The parent theme does not include any CSS in
-style.css, and so you don't need to @import it here.
-*/
-/* Add your custom CSS here. */
-/* theme resets, remove some theme defaults */
 /* experimental block grid code, will not work in IE8  */
 [class*="block-grid-"] { display: block; padding: 0; margin: 0 -0.55556rem; zoom: 1; }
 [class*="block-grid-"]:before, [class*="block-grid-"]:after { content: ''; display: table; }
@@ -72,12 +66,12 @@ body, html { color: #59595c; }
 #bottom #footer_content { background-color: #fff; box-shadow: none; }
 
 .clearfix { zoom: 1; }
-.clearfix:before { content: ""; display: table; }
-.clearfix:after { content: ""; display: table; clear: both; }
+.clearfix:before { content: ''; display: table; }
+.clearfix:after { content: ''; display: table; clear: both; }
 
 table#rings tr { border-top: 1px solid #eee; }
 table#rings tr td { padding-top: 10px; }
-table#rings tr:first-child { border-top: none; padding-top: 0; }
+table#rings tr:first-child { border-top: 0; padding-top: 0; }
 
 .right-text > .wpb_wrapper { font-size: 18px; padding-top: 40px; }
 
@@ -85,7 +79,7 @@ table#rings tr:first-child { border-top: none; padding-top: 0; }
 
 h1 { font-size: 54px; font-family: "Tangerine", Times, serif; line-height: 1; }
 
-.home .element-columns h3 { font-family: "Baskerville", Times, serif; color: #44ad92; font-size: 35px; -webkit-font-smoothing: subpixel-antialiased; word-spacing: -0.1em; text-align: center; }
+.home .element-columns h3 { font-family: "Baskerville", Times, serif; color: #44ad92; font-size: 24px; -webkit-font-smoothing: subpixel-antialiased; word-spacing: -.1em; text-align: center; }
 
 #main-top { background: transparent; background-image: none !important; }
 
